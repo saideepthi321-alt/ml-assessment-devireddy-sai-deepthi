@@ -50,9 +50,9 @@ Using one single model for all 50 stores is not a good idea because:
 
 We can use a segmented modelling strategy, like:
 * Group stores based on type:
-    * Urban stores → one model
-    * Semi-urban stores → one model
-    * Rural stores → one model
+    * Urban stores --> one model
+    * Semi-urban stores --> one model
+    * Rural stores --> one model
 OR
 * Use a Hierarchical / Mixed Model where:
     * There is a global model
@@ -65,6 +65,7 @@ It avoids the mistake of assuming all stores behave the same, which is not true 
 
 
 B2. Data and EDA Strategy
+
 (a) Data Joining and Final Dataset Design
 
 We have 4 tables:
