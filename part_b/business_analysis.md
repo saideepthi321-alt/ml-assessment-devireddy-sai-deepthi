@@ -105,6 +105,7 @@ Other features:
 Raw transaction data is too detailed (bill-level), but decision is taken at monthly store level, so we aggregate to match business use.
 
 (b) EDA (Exploratory Data Analysis)
+
 Before building model, we should understand the data properly.
 
 1. Sales Distribution Plot
