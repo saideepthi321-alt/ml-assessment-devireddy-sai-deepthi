@@ -112,49 +112,53 @@ Before building model, we should understand the data properly.
     * Look for extreme values 
 
 Impact:
-If highly skewed - may apply log transformation
-If outliers - may cap or handle separately
+* If highly skewed - may apply log transformation
+* If outliers - may cap or handle separately
 
 2. Promotion Type vs Items Sold
-    * Compare how each promotion performs
 
-Look for:
+Compare how each promotion performs
+
+* Look for:
     * Which promotion gives higher median sales
     * Variability in performance
-Impact:
+* Impact:
     * Helps in feature importance understanding
     * May create interaction features later
 
 3. Store Type vs Sales (Urban vs Rural comparison)
+
 Compare sales across location types
 
-Look for:
+* Look for:
     * Do urban stores sell more?
     * Does promotion effect differ by location?
 
-Impact:
+* Impact:
     * May need separate models or interaction features
 
 
 4. Time-based Trend (Line chart month vs sales)
-* Check seasonality
 
-Look for:
+Check seasonality
+
+* Look for:
     * Festival spikes
     * Monthly patterns
 
-Impact:
+* Impact:
     * Add time features (month, festival flag)
     * Helps model capture seasonality
 
 
 5. Correlation Heatmap (optional but useful)
-* Check relation between numerical features
 
-Look for:
+Check relation between numerical features
+
+* Look for:
     * Strong correlations (multicollinearity)
 
-Impact:
+* Impact:
     * Remove redundant features
     * Improve model stability
 
