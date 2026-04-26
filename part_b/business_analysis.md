@@ -302,8 +302,8 @@ Step 6: Retraining Strategy
     * Every few months OR
     * When performance drops
 
-* Summary:
-    * Build once
-    * Use every month
-    * Monitor continuously
-    * Retrain when needed
+Summary:
+* Build once
+* Use every month
+* Monitor continuously
+* Retrain when needed
