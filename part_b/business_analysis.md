@@ -50,9 +50,9 @@ Using one single model for all 50 stores is not a good idea because:
 
 We can use a segmented modelling strategy, like:
 * Group stores based on type:
-    * Urban stores --> one model
-    * Semi-urban stores --> one model
-    * Rural stores --> one model
+    * Urban stores -> one model
+    * Semi-urban stores -> one model
+    * Rural stores -> one model
 OR
 * Use a Hierarchical / Mixed Model where:
     * There is a global model
@@ -118,7 +118,7 @@ Impact:
 
 2. Promotion Type vs Items Sold
 
-Compare how each promotion performs
+* Compare how each promotion performs
 
 * Look for:
     * Which promotion gives higher median sales
@@ -129,7 +129,7 @@ Compare how each promotion performs
 
 3. Store Type vs Sales (Urban vs Rural comparison)
 
-Compare sales across location types
+* Compare sales across location types
 
 * Look for:
     * Do urban stores sell more?
@@ -141,7 +141,7 @@ Compare sales across location types
 
 4. Time-based Trend (Line chart month vs sales)
 
-Check seasonality
+* Check seasonality
 
 * Look for:
     * Festival spikes
@@ -154,7 +154,7 @@ Check seasonality
 
 5. Correlation Heatmap (optional but useful)
 
-Check relation between numerical features
+* Check relation between numerical features
 
 * Look for:
     * Strong correlations (multicollinearity)
@@ -189,21 +189,22 @@ Make sure model properly learns promotion impact, not just default behaviour.
 
 
 B3. Model Evaluation and Deployment
+
 (a) Train-Test Split and Evaluation Metrics
 
 We have 3 years of monthly data, so this is clearly time-based data.
 How to split:
 * Use time-based split, not random
 Example:
-    * Train data → First 2 years
-    * Test data → Last 1 year
+    * Train data -> First 2 years
+    * Test data -> Last 1 year
 
 OR
 * Use rolling validation
 
 Why random split is wrong:
 * Random split will mix past and future data
-* Model may learn from future data → data leakage
+* Model may learn from future data -> data leakage
 * In real life, we always predict future using past, so split should follow time order
 
 Evaluation Metrics:
@@ -227,8 +228,8 @@ R^2  - overall model quality
 (b) Explaining Different Recommendations (Feature Importance)
 
 Model is recommending:
-    * December → Loyalty Points Bonus
-    * March → Flat Discount
+* December -> Loyalty Points Bonus
+* March -> Flat Discount
 
 Even though same store, recommendation is different because input features are different.
 
@@ -243,7 +244,7 @@ What we may find:
     * Festival season
     * High customer spending
     * Loyalty points may work better
-March:
+* March:
     * No major festivals
     * Customers more price-sensitive
     * Flat discount works better
@@ -301,7 +302,7 @@ Step 6: Retraining Strategy
     * Every few months OR
     * When performance drops
 
-Overall idea:
+* Summary:
     * Build once
     * Use every month
     * Monitor continuously
