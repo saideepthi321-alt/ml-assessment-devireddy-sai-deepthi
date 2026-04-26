@@ -34,8 +34,8 @@ Using total sales revenue can be misleading in this situation.
 So revenue does not clearly show how effective a promotion is.
 
 On the other hand, items sold (volume) directly shows:
-    * How many products customers are buying
-    * How well the promotion is attracting customers
+* How many products customers are buying
+* How well the promotion is attracting customers
 
 In ML projects, we should always choose a target variable that directly reflects the business goal.
 Here, the goal is to increase product movement, so items sold is the correct target, not revenue.
